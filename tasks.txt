@@ -1,0 +1,5 @@
+1-išvesti šunį
+2-pagaminti valgyti
+3-paskambinti į polikliniką
+4-sutvarkyti sandeliuką
+5-nupirkti vaisių (obuoliai, mandarinai, bananai)
