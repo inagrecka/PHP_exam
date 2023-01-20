@@ -11,7 +11,9 @@
       Destination "New York"
       ...
 */
-
+/*
+4. Pakoreguokite 3 užduotį taip, kad ji duomenis rašytų ne į terminalą, o spausdintų į failą. (1.5 balas)
+ */
    $holidays = [
        [
            'title' => 'Romantic Paris',
@@ -60,13 +62,17 @@
            }
        }
 //       var_dump($newArr);
-
+       $summary = 'summary.txt';
        foreach ($newArr as $value) {
            if ($value['total'] > 0) {
-               echo 'Destination: "'.$value['destination'].'".'.PHP_EOL;
-               echo 'Titles: "'.$value['title'].'".'.PHP_EOL;
-               echo 'Total: "'.$value['total'].'".'.PHP_EOL;
-               echo '***********************'.PHP_EOL;
+               $destination = 'Destination: "'.$value['destination'].'".'.PHP_EOL;
+               $titles = 'Titles: "'.$value['title'].'".'.PHP_EOL;
+               $total = 'Total: "'.$value['total'].'".'.PHP_EOL;
+               $symbols = '***********************'.PHP_EOL;
+               file_put_contents(
+                   $summary,
+                   ($destination.$titles.$total.$symbols),
+               FILE_APPEND);
            }
        }
    }
