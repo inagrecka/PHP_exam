@@ -1,0 +1,13 @@
+
+Destination: "Paris".
+Titles: "Romantic Paris, Amazing New York, Spectacular Sydey".
+Total: "99500".
+***********************
+Destination: "New York".
+Titles: "Amazing New York".
+Total: "56679".
+***********************
+Destination: "Sydey".
+Titles: "Spectacular Sydey".
+Total: "37170".
+***********************
